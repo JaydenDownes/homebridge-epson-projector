@@ -1,0 +1,9 @@
+{
+    "accessories": [
+      {
+        "accessory": "EpsonProjector",
+        "name": "Living Room Projector",
+        "host": "192.168.1.20"
+      }
+    ]
+  }

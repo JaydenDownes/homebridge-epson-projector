@@ -1,0 +1,50 @@
+{
+  "pluginAlias": "EpsonProjector",
+  "pluginType": "accessory",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "accessories": {
+        "type": "array",
+        "title": "Accessories",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "required": true
+            },
+            "host": {
+              "title": "Projector IP Address",
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "form": [
+    {
+      "type": "fieldset",
+      "items": [
+        {
+          "key": "accessories",
+          "add": "Add Accessory",
+          "items": [
+            {
+              "key": "accessories[].name",
+              "title": "Accessory Name"
+            },
+            {
+              "key": "accessories[].host",
+              "title": "IP Address"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
